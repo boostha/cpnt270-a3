@@ -15,7 +15,7 @@ const init = async () => {
 
   document.querySelector('.news').innerHTML = `
   <figure>
-    <a href="${address}"
+    <a href="${address}">
       <img src="${newsFigure.url}" alt="">
     </a>
     <figcaption>${cap}</figcaption>
