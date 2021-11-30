@@ -18,9 +18,9 @@ const newsFun = async () => {
   document.querySelector('.news').innerHTML = `
   <figure>
     <a href="${address}">
-      <img src="${newsFigure.url}" alt="" width="500">
+      <img src="${newsFigure.url}" alt="" width="400">
     </a>
-    <figcaption>${cap}</figcaption>
+    <figcaption><a href="${address}">${cap}</a></figcaption>
   </figure>
   `
 
@@ -41,7 +41,7 @@ const foodFun = async () => {
   document.querySelector('.food').innerHTML = `
   <figure>
     <a href="${address}">
-      <img src="${foodFigure.url}" alt="" width="500">
+      <img src="${foodFigure.url}" alt="" width="400">
     </a>
     
     <figcaption><a href="${address}">${cap}</a></figcaption>
@@ -66,7 +66,7 @@ const blogFun = async () => {
   document.querySelector('.blog').innerHTML = `
   <figure>
     <a href="${address}">
-      <img src="${blogFigure.url}" alt="" width="500">
+      <img src="${blogFigure.url}" alt="" width="400">
     </a>
     <figcaption><a href="${address}">${cap}</a></figcaption>
   </figure>

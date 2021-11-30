@@ -1,0 +1,36 @@
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+figure img:hover {
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+}
