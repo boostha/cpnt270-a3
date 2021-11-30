@@ -1,16 +1,32 @@
+let websiteIndex
+let address
+let cap
+
 const init = async () => {
   const response = await fetch('/.netlify/functions/event');
   const data = await response.json();
 
-  const lunchFigure = data.find((item) => item.caption.includes('#news'));
+  const newsFigure = data.find((item) => item.caption.includes('#news'));
+  websiteIndex = newsFigure.search('http')
+  address = newsFigure.slice(websiteIndex)
+  cap = newsFigure.slice(0, websiteIndex)
 
-  document.querySelector('.container').innerHTML = `
+  newsFigure.forEach((picture) => {
+    output += 
+    `
     <figure>
-      <img src="${lunchFigure.url}" alt="Tony's image">
-      <figcaption>${lunchFigure.caption}</figcaption>
+      <a href="${address}">
+        <img src="${picture.url}" alt="" width="500" height="500">
+      </a>
+      <figcaption>
+        <p>${cap}</p>
+      </figcaption>
     </figure>
-  `
+    `
+  })
+
   console.log(data);
 }
 
 init();
+document.querySelector('.news').innerHTML = output
