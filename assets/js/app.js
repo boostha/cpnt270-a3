@@ -7,10 +7,10 @@ const init = async () => {
   const data = await response.json();
 
   const newsFigure = await data.find((item) => item.caption.includes('#news'));
-
-  websiteIndex = newsFigure.search('http')
-  address = newsFigure.slice(websiteIndex)
-  cap = newsFigure.slice(0, websiteIndex)
+  console.log(newsFigure)
+  // websiteIndex = newsFigure.search('http')
+  // address = newsFigure.slice(websiteIndex)
+  // cap = newsFigure.slice(0, websiteIndex)
 
   document.querySelector('.news').innerHTML = `
   <figure>
