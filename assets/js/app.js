@@ -1,6 +1,7 @@
 let websiteIndex
 let address
 let cap
+let output = ''
 
 const init = async () => {
   const response = await fetch('/.netlify/functions/event');
