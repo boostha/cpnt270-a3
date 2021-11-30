@@ -38,14 +38,14 @@ const foodFun = async () => {
   address = foodFigure.caption.slice(websiteIndex)
   cap = foodFigure.caption.slice(0, hashIndex)
 
-  document.querySelector('.news').innerHTML = `
+  document.querySelector('.food').innerHTML = `
   <figure>
     <a href="${address}">
       <img src="${foodFigure.url}" alt="" width="500">
     </a>
-    <a href="${address}">
-    <figcaption>${cap}</figcaption>
-    </a>
+    
+    <figcaption><a href="${address}">${cap}</a></figcaption>
+    
   </figure>
   `
 
@@ -63,12 +63,12 @@ const blogFun = async () => {
   address = blogFigure.caption.slice(websiteIndex)
   cap = blogFigure.caption.slice(0, hashIndex)
 
-  document.querySelector('.news').innerHTML = `
+  document.querySelector('.blog').innerHTML = `
   <figure>
     <a href="${address}">
       <img src="${blogFigure.url}" alt="" width="500">
     </a>
-    <figcaption>${cap}</figcaption>
+    <figcaption><a href="${address}">${cap}</a></figcaption>
   </figure>
   `
 
