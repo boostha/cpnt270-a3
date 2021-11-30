@@ -8,9 +8,9 @@ const init = async () => {
 
   const newsFigure = data.find((item) => item.caption.includes('#news'));
 
-  websiteIndex = newsFigure.search('http')
-  address = newsFigure.slice(websiteIndex)
-  cap = newsFigure.slice(0, websiteIndex)
+  websiteIndex = await newsFigure.search('http')
+  address = await newsFigure.slice(websiteIndex)
+  cap = await newsFigure.slice(0, websiteIndex)
 
   document.querySelector('.news').innerHTML = `
   <figure>
