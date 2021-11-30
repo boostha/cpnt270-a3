@@ -3,8 +3,25 @@ figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   font-size: 2rem;
+  border: 2px solid transparent;
+  background-color: rgb(184, 184, 255);
+}
+
+figcaption {
+  width: 23ch;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+figcaption a {
+  text-decoration: none;
+  color: black;
+}
+
+figcaption a:hover {
+  opacity: 0.8;
 }
 
 figure img:hover {
