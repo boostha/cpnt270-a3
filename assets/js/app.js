@@ -8,11 +8,14 @@ const init = async () => {
   const data = await response.json();
 
   const newsFigure = data.find((item) => item.caption.includes('#news'));
-  websiteIndex = newsFigure.search('http')
-  address = newsFigure.slice(websiteIndex)
-  cap = newsFigure.slice(0, websiteIndex)
-
+  
   newsFigure.forEach((picture) => {
+
+
+    websiteIndex = newsFigure.search('http')
+    address = newsFigure.slice(websiteIndex)
+    cap = newsFigure.slice(0, websiteIndex)
+    
     output += 
     `
     <figure>
