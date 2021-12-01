@@ -40,7 +40,7 @@ There are lots of facebook and instagram accounts that like to cover the events 
 - [Netlify environment variables](https://docs.netlify.com/configure-builds/environment-variables/)
 
 ## Comments
-- To extend the functionality beyond your in class example, I used javascript .search and .slice functions to find links and to cut out the hashtags to make the post look more professional on the website.
+- To extend the functionality beyond your in class example, I used javascript .search and .slice functions to find links so that the picture and caption are clickable and I also used it to cut out the hashtags to make the post look more professional
 
 ## Attributions
 - [Peace Bridge](https://unsplash.com/photos/4ZPrc2__Kr0) by [Denisse Leon](https://unsplash.com/@denisseleon) under the [Unsplash License](https://unsplash.com/license)
