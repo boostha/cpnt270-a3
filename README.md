@@ -41,23 +41,6 @@ There are lots of facebook and instagram accounts that like to cover the events 
 
 ## Comments
 - To extend the functionality beyond your in class example, I used javascript .search and .slice functions to find links and to cut out the hashtags to make the post look more professional on the website.
-  ``const newsFigure = await data.find((item) => item.caption.includes('#news'));
-  console.log(newsFigure)
-
-  websiteIndex = newsFigure.caption.search('http')
-  hashIndex = newsFigure.caption.search('#')
-  address = newsFigure.caption.slice(websiteIndex)
-  cap = newsFigure.caption.slice(0, hashIndex)
-
-  document.querySelector('.news').innerHTML = `
-  <figure>
-    <a href="${address}">
-      <img src="${newsFigure.url}" alt="" width="400">
-    </a>
-    <figcaption><a href="${address}">${cap}</a></figcaption>
-  </figure>
-  ` ``
-
 
 ## Attributions
 - [Peace Bridge](https://unsplash.com/photos/4ZPrc2__Kr0) by [Denisse Leon](https://unsplash.com/@denisseleon) under the [Unsplash License](https://unsplash.com/license)
