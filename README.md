@@ -11,11 +11,11 @@ There are lots of facebook and instagram accounts that like to cover the events 
 ## Operational Integration
 
 ### Documentation
-- [How to create an Instagram post](https://blog.hubspot.com/marketing/how-to-post-on-instagram)
 - [Instagram Basic Display API - Uses and Limitations](https://developers.facebook.com/docs/instagram-basic-display-api#legacy-ids)
 - [Instagram Basic Display API - Getting Started](https://developers.facebook.com/docs/instagram-basic-display-api/getting-started)
 - [Instagram Basic Display API - Access Tokens](https://developers.facebook.com/docs/instagram-basic-display-api/guides)
 - [Instagram Basic Display API - Endpoint References](https://developers.facebook.com/docs/instagram-basic-display-api/reference)
+- [How to create an Instagram post](https://blog.hubspot.com/marketing/how-to-post-on-instagram)
 - Avaliable hashtags to use for demonstration
   - #news
   - #blog
@@ -39,6 +39,24 @@ There are lots of facebook and instagram accounts that like to cover the events 
 - [Dotenv Documentation](https://www.npmjs.com/package/dotenv)
 - [Netlify environment variables](https://docs.netlify.com/configure-builds/environment-variables/)
 
+## Comments
+- To extend the functionality beyond your in class example, I used javascript .search and .slice functions to find links and to cut out the hashtags to make the post look more professional on the website.
+  ``const newsFigure = await data.find((item) => item.caption.includes('#news'));
+  console.log(newsFigure)
+
+  websiteIndex = newsFigure.caption.search('http')
+  hashIndex = newsFigure.caption.search('#')
+  address = newsFigure.caption.slice(websiteIndex)
+  cap = newsFigure.caption.slice(0, hashIndex)
+
+  document.querySelector('.news').innerHTML = `
+  <figure>
+    <a href="${address}">
+      <img src="${newsFigure.url}" alt="" width="400">
+    </a>
+    <figcaption><a href="${address}">${cap}</a></figcaption>
+  </figure>
+  ` ``
 
 
 ## Attributions
