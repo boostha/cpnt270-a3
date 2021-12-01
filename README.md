@@ -1,5 +1,14 @@
 # CPNT270-A3 Social Integration
 
+## Author
+
+David Ha
+
+## Links
+
+- [Github Repo](https://github.com/boostha/cpnt270-a3)
+- [Netlify](https://agitated-rosalind-dbd5f0.netlify.app/)
+
 ## Market and Problem
 
 ### User Story
